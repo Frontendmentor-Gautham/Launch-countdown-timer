@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+/* font-family: 'Red Hat Text', sans-serif; */
+
+:root{
+    --Grayish-blue: hsl(237, 18%, 59%);
+    --Soft-red: hsl(345, 95%, 68%);
+
+    --White: hsl(0, 0%, 100%);
+    --Dark-desaturated-blue: hsl(236, 21%, 26%);
+    --Very-dark-blue: hsl(235, 16%, 14%);
+    --mostly-black: hsl(234, 17%, 12%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Text', sans-serif;
+    background-color: var(--Very-dark-blue);
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.stars{
+    position: absolute;
+}
+
+.hills{
+    position: absolute;
+    bottom: 0;
+}
+
+@media (min-width: 1440px){
+    .stars img , .hills img{
+        width: 1600px;
+    }
+}
+
+@media (max-width:768px){
+    .hills img{
+        position: relative;
+        width: 100%;
+        height: 120px;
+    }
+}
+
+/* container */
+.container{
+
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container h1{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.countdown{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.countdown div{
+    margin: 10px;
+}
+
+
+
+.countdown p{
+    padding: 20px;
+    background-color: var(--Dark-desaturated-blue);
+    color: var(--Soft-red);
+    font-size: 46px;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+.countdown h3{
+    color: var(--Grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* socials */
+.socials{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.socials ul{
+    display: flex;
+}
+
+.socials ul li{
+    margin: 0 20px;
+}
+
+.socials ul li:hover{
+    cursor: pointer;
+    color: var(--Soft-red);
+}
